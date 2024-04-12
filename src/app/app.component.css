@@ -1,0 +1,21 @@
+.containetText h1{
+  display: flex;
+  justify-content: center;
+}
+.bttns
+{
+  display: flex;
+  justify-content: center;
+  margin:2px 2px 2px 2px
+}
+.bttns button {
+  background-color: slategray;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 1px 10px 1px 5px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1em;
+  color: yellowgreen;
+}
