@@ -2,20 +2,13 @@
   <div class="containetText">
     <h1>{{title}}</h1>
   </div>
-  <app-display-cronometro [hours]="hours" [minuts]="minuts" [secs]="secs"></app-display-cronometro>
+  <app-display-cronometro [hours]="hours" [minuts]="minuts" [secs]="secs"
+  [mns]="mns"></app-display-cronometro>
 
   <div class="bttns">
-    <div class="bttnStart">
-      <button (click)="save(secs)">Save</button>
-    </div>
-    <div class="bttnStart">
-      <button (click)="start()">Start</button>
-    </div>
-    <div class="bttnStart">
-      <button (click)="pause()">Pause</button>
-    </div>
-    <div class="bttnStart">
-      <button (click)="reset()">Reset</button>
-    </div>
+    <app-button-components  [text]="text_start" (clickEvent)="start()"></app-button-components>
+    <app-button-components  [text]="text_pause" (clickEvent)="pause()"></app-button-components>
+
+    <app-button-components [text]="text_reset" (clickEvent)="reset()"></app-button-components>
   </div>
 </div>

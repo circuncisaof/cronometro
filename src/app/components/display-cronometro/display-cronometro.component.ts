@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./display-cronometro.component.css']
 })
 export class DisplayCronometroComponent {
-  @Input() days:number = 0;
   @Input() minuts:number = 0;
   @Input() secs:number = 0;
   @Input() hours:number = 0;
+  @Input() mns:number = 0;
 }
